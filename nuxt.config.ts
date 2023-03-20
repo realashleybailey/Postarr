@@ -33,18 +33,19 @@ export default defineNuxtConfig({
   },
 
   modules: [
+    "@sidebase/nuxt-auth",
     "nuxt-icon",
     "@kevinmarrec/nuxt-pwa",
     "@nuxtjs/color-mode",
     // this adds the vuetify vite plugin
     // also produces type errors in the current beta release
-    async (_, nuxt) => {
-      // @ts-ignore
-      nuxt.hooks.hook("vite:extendConfig", (config) =>
-        // @ts-ignore
-        config.plugins.push(vuetify())
-      );
-    },
+    // async (_, nuxt) => {
+    //   // @ts-ignore
+    //   nuxt.hooks.hook("vite:extendConfig", (config) =>
+    //     // @ts-ignore
+    //     config.plugins.push(vuetify())
+    //   );
+    // },
   ],
 
   app: {
@@ -119,6 +120,18 @@ export default defineNuxtConfig({
         },
       ],
     },
+  },
+
+  hooks: {
+    "vite:extendConfig": (config) => {
+      config.plugins!.push(vuetify());
+    },
+  },
+
+  auth: {
+    origin: process.env.ORIGIN || "http://localhost:3000",
+    enableGlobalAppMiddleware: true,
+    addDefaultCallbackUrl: true,
   },
 
   pwa: {

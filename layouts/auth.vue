@@ -2,7 +2,7 @@
   <div>
     <VApp>
       <v-app>
-        <v-toolbar color="primary" dark>
+        <v-toolbar color="primary" dark fixed>
           <v-toolbar-title>Postarr</v-toolbar-title>
         </v-toolbar>
         <VMain class="mainContent">

@@ -1,18 +1,16 @@
-import { PrismaClient } from "@prisma/client";
-import SHA256 from "crypto-js/sha256";
+import crypto from "crypto-js";
+import prisma from "~~/server/database/client";
 import { errorHandler } from "~~/helpers/errorHandler";
-
-const prisma = new PrismaClient();
 
 export default defineEventHandler(async (event) => {
   // Read body from request
-  const { name, email, password } = await readBody(event);
+  const { name, username, email, password } = await readBody(event);
 
   // Check if email and password are provided
-  if (!name || !email || !password) {
+  if (!name || !username || !email || !password) {
     const error = createError({
       statusCode: 400,
-      statusMessage: "Missing name, email or password",
+      statusMessage: "Missing name, username, email or password",
     });
 
     return sendError(event, error);
@@ -60,13 +58,14 @@ export default defineEventHandler(async (event) => {
   }
 
   // Hash password
-  const hashedPassword = SHA256(password).toString();
+  const hashedPassword = crypto.SHA256(password).toString();
 
   // Create user
   const [userError, user] = await errorHandler(() =>
     prisma.user.create({
       data: {
         name,
+        username,
         email,
         password: hashedPassword,
       },

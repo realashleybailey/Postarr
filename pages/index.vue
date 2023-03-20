@@ -1,14 +1,15 @@
 <template>
-  <select v-model="$colorMode.preference">
-    <option value="system">System</option>
-    <option value="light">Light</option>
-    <option value="dark">Dark</option>
-    <option value="sepia">Sepia</option>
-  </select>
+  <div>
+    <v-switch @change="toggleTheme"></v-switch>
+    {{ status }}
+  </div>
 </template>
 
 <script setup>
+import { ref } from "vue";
 import { useTheme } from "vuetify";
+
+const { status } = useSession();
 
 useHead({
   title: "Home",
@@ -22,5 +23,10 @@ useHead({
 });
 
 const theme = useTheme();
-theme.global.name = "dark";
+const darkMode = ref(false);
+
+const toggleTheme = () => {
+  theme.global.name.value = darkMode.value ? "mainDarkTheme" : "mainTheme";
+  darkMode.value = !darkMode.value;
+};
 </script>

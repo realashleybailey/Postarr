@@ -2,7 +2,7 @@ import { createVuetify } from "vuetify";
 import { aliases, custom } from "~/helpers/customIcons";
 import { MAIN_DARK_THEME, mainTheme, mainDarkTheme } from "~/helpers/themes";
 import { defaults } from "~~/helpers/defaults";
-// console.log(useColorMode().value);
+
 export default defineNuxtPlugin((app) => {
   const vuetify = createVuetify({
     ssr: true,

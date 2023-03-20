@@ -1,0 +1,15 @@
+version: '3.3'
+
+services:
+  postarr:
+    build:
+      context: .
+    image: postarr
+    container_name: postarr
+    ports:
+      - "3000:3000"
+    environment:
+      - ORIGIN=http://localhost:3000
+      - SECRET=aa40c6ede66e812aec7d1f87f53b0868513a3c07d68ebb2377f16512fff61f21
+      - GITHUB_ID=600f8e128bf51062f13d
+      - GITHUB_SECRET=71d458506360723ec9c91a14b722b3bde8d3abd7

@@ -9,6 +9,14 @@
   }
 }
 
+
+// On Mobile
+@media only screen and (max-width: 600px) {
+  nav * {
+    --v-avatar-height: 24px !important;
+  }
+}
+
 .v-btn {
   font-weight: 700 !important;
 }

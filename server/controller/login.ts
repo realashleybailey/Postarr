@@ -1,29 +1,24 @@
 import { PrismaClient } from "@prisma/client";
-import SHA256 from "crypto-js/sha256";
+import crypto from "crypto-js";
 import { errorHandler } from "~~/helpers/errorHandler";
 
-const prisma = new PrismaClient();
-
-export default defineEventHandler(async (event) => {
-  // Read body from request
-  const { email, password } = await readBody(event);
-
+export default async function login(prisma: PrismaClient, username: string, password: string) {
   // Check if email and password are provided
-  if (!email || !password) {
+  if (!username || !password) {
     const error = createError({
       statusCode: 400,
       statusMessage: "Missing email or password",
     });
 
-    return sendError(event, error);
+    throw error;
   }
 
   // Check if user exists
-  const [userError, user] = await errorHandler(() => prisma.user.findUnique({ where: { email } }));
+  const [userError, user] = await errorHandler(() => prisma.user.findUnique({ where: { username } }));
 
   // Handle errors for prisma querie
   if (userError) {
-    return sendError(event, userError);
+    throw userError;
   }
 
   // Check if user exists
@@ -33,11 +28,11 @@ export default defineEventHandler(async (event) => {
       statusMessage: "User does not exist",
     });
 
-    return sendError(event, error);
+    throw error;
   }
 
   // Hash password
-  const hashedPassword = SHA256(password);
+  const hashedPassword = crypto.SHA256(password);
 
   // Compare hashed password with user password in database
   if (hashedPassword.toString() !== user.password) {
@@ -46,12 +41,14 @@ export default defineEventHandler(async (event) => {
       statusMessage: "Invalid password",
     });
 
-    return sendError(event, error);
+    throw error;
   }
 
   // Remove password from user object, we cast to any because of typescript complaining
   delete (user as any).password;
 
+  console.log("User logged in", user);
+
   // Return user object
-  return { user };
-});
+  return user;
+}
