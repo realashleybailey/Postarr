@@ -78,23 +78,34 @@ This software is designed to communicate with Jellyfin media server for users wh
 
 ### Built With
 
-* [@nuxtjs/vuetify] - ^1.12.3
-* [nuxt][nuxt-url] - ^3.3.1
-* [nuxt-icon][nuxt-icon-url] - ^0.3.3
-* [prisma][prisma-url] - ^4.11.0
-* [sass][sass-url] - ^1.59.3
-* [typescript][typescript-url] - ^5.0.2
-* [vuetify][vuetify-url] - ^3.1.4
-* [@nuxtjs/auth-next][nuxtjs/auth-next-url] - 5.0.0-1667386184.dfbbb54
-* [@nuxtjs/color-mode][nuxtjs/color-mode-url] - ^3.2.0
-* [@prisma/client][prisma/client-url] - 4.11.0
-* [axios][axios-url] - ^1.3.4
-* [crypto-js][crypto-js-url] - ^4.1.1
-* [jsonwebtoken][jsonwebtoken-url] - ^9.0.0
-* [mobile-detect][mobile-detect-url] - ^1.4.5
-* [next-auth][next-auth-url] - 4.18.8
-* [pinia][pinia-url] - ^2.0.33
-* [vite-plugin-vuetify][vite-plugin-vuetify-url] - ^1.0.2
+* [@kevinmarrec/nuxt-pwa@0.17.0](https://www.npmjs.com/package/@kevinmarrec/nuxt-pwa/v/0.17.0)
+* [@nuxtjs/auth-next@5.0.0-1667386184.dfbbb54](https://www.npmjs.com/package/@nuxtjs/auth-next/v/5.0.0-1667386184.dfbbb54)
+* [@nuxtjs/color-mode@3.2.0](https://www.npmjs.com/package/@nuxtjs/color-mode/v/3.2.0)
+* [@nuxtjs/eslint-config-typescript@12.0.0](https://www.npmjs.com/package/@nuxtjs/eslint-config-typescript/v/12.0.0)
+* [@nuxtjs/google-fonts@3.0.0](https://www.npmjs.com/package/@nuxtjs/google-fonts/v/3.0.0)
+* [@nuxtjs/vuetify@1.12.3](https://www.npmjs.com/package/@nuxtjs/vuetify/v/1.12.3)
+* [@prisma/client@4.11.0](https://www.npmjs.com/package/@prisma/client/v/4.11.0)
+* [@sidebase/nuxt-auth@0.4.4](https://www.npmjs.com/package/@sidebase/nuxt-auth/v/0.4.4)
+* [@types/crypto-js@4.1.1](https://www.npmjs.com/package/@types/crypto-js/v/4.1.1)
+* [@types/node@18.15.3](https://www.npmjs.com/package/@types/node/v/18.15.3)
+* [@typescript-eslint/parser@5.55.0](https://www.npmjs.com/package/@typescript-eslint/parser/v/5.55.0)
+* [axios@1.3.4](https://www.npmjs.com/package/axios/v/1.3.4)
+* [crypto-js@4.1.1](https://www.npmjs.com/package/crypto-js/v/4.1.1)
+* [eslint-config-prettier@8.7.0](https://www.npmjs.com/package/eslint-config-prettier/v/8.7.0)
+* [eslint-plugin-prettier@4.2.1](https://www.npmjs.com/package/eslint-plugin-prettier/v/4.2.1)
+* [eslint@8.36.0](https://www.npmjs.com/package/eslint/v/8.36.0)
+* [jsonwebtoken@9.0.0](https://www.npmjs.com/package/jsonwebtoken/v/9.0.0)
+* [mobile-detect@1.4.5](https://www.npmjs.com/package/mobile-detect/v/1.4.5)
+* [next-auth@4.18.8](https://www.npmjs.com/package/next-auth/v/4.18.8)
+* [nuxt-icon@0.3.3](https://www.npmjs.com/package/nuxt-icon/v/0.3.3)
+* [nuxt@3.3.1](https://www.npmjs.com/package/nuxt/v/3.3.1)
+* [pinia@2.0.33](https://www.npmjs.com/package/pinia/v/2.0.33)
+* [prettier@2.8.4](https://www.npmjs.com/package/prettier/v/2.8.4)
+* [prisma@4.11.0](https://www.npmjs.com/package/prisma/v/4.11.0)
+* [sass@1.59.3](https://www.npmjs.com/package/sass/v/1.59.3)
+* [typescript@5.0.2](https://www.npmjs.com/package/typescript/v/5.0.2)
+* [vite-plugin-vuetify@1.0.2](https://www.npmjs.com/package/vite-plugin-vuetify/v/1.0.2)
+* [vuetify@3.1.10](https://www.npmjs.com/package/vuetify/v/3.1.10)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
