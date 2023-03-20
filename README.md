@@ -68,9 +68,9 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+<!-- [![Product Name Screen Shot][product-screenshot]](https://example.com) -->
 
-Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `realashleybailey`postarr `repo_name`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `project_title`, `project_description`
+This software is designed to communicate with Jellyfin media server for users who are currently watching movies, and then extract the corresponding movie posters. It then lets you push these posters to remote displays, effortlessly enhancing your home theater setup by showcasing what your family and friends are watching in real-time.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -78,14 +78,23 @@ Here's a blank template to get started: To avoid retyping too much info. Do a se
 
 ### Built With
 
-* [![Next][Next.js]][Next-url]
-* [![React][React.js]][React-url]
-* [![Vue][Vue.js]][Vue-url]
-* [![Angular][Angular.io]][Angular-url]
-* [![Svelte][Svelte.dev]][Svelte-url]
-* [![Laravel][Laravel.com]][Laravel-url]
-* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
-* [![JQuery][JQuery.com]][JQuery-url]
+* [@nuxtjs/vuetify] - ^1.12.3
+* [nuxt][nuxt-url] - ^3.3.1
+* [nuxt-icon][nuxt-icon-url] - ^0.3.3
+* [prisma][prisma-url] - ^4.11.0
+* [sass][sass-url] - ^1.59.3
+* [typescript][typescript-url] - ^5.0.2
+* [vuetify][vuetify-url] - ^3.1.4
+* [@nuxtjs/auth-next][nuxtjs/auth-next-url] - 5.0.0-1667386184.dfbbb54
+* [@nuxtjs/color-mode][nuxtjs/color-mode-url] - ^3.2.0
+* [@prisma/client][prisma/client-url] - 4.11.0
+* [axios][axios-url] - ^1.3.4
+* [crypto-js][crypto-js-url] - ^4.1.1
+* [jsonwebtoken][jsonwebtoken-url] - ^9.0.0
+* [mobile-detect][mobile-detect-url] - ^1.4.5
+* [next-auth][next-auth-url] - 4.18.8
+* [pinia][pinia-url] - ^2.0.33
+* [vite-plugin-vuetify][vite-plugin-vuetify-url] - ^1.0.2
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
