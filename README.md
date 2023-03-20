@@ -9,7 +9,7 @@
 <h3 align="center">Postarr</h3>
 
   <p align="center">
-    project_description
+    Arr yah ready kids?
     <br />
     <a href="https://github.com/realashleybailey/postarr"><strong>Explore the docs »</strong></a>
     <br />
@@ -204,11 +204,7 @@ Project Link: [https://github.com/realashleybailey/postarr](https://github.com/r
 
 
 <!-- ACKNOWLEDGMENTS -->
-## Acknowledgments
-
-* []()
-* []()
-* []()
+<!-- ## Acknowledgments -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
