@@ -30,7 +30,7 @@
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
+[![CC License][license-shield]][license-url]
 
 </div>
 
@@ -209,7 +209,7 @@ Project Link: [https://github.com/realashleybailey/postarr](https://github.com/r
 [stars-url]: https://github.com/realashleybailey/postarr/stargazers
 [issues-shield]: https://img.shields.io/github/issues/realashleybailey/postarr.svg?style=for-the-badge
 [issues-url]: https://github.com/realashleybailey/postarr/issues
-[license-shield]: https://img.shields.io/github/license/realashleybailey/postarr.svg?style=creativecommons
+[license-shield]: https://img.shields.io/github/license/realashleybailey/postarr.svg?style=for-the-badge
 [license-url]: https://github.com/realashleybailey/postarr/blob/master/LICENSE.md
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/linkedin_username
